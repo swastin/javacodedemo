@@ -1,0 +1,4 @@
+/**
+ * 
+ */
+print("java is cool");
