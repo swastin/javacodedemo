@@ -109,8 +109,10 @@ public class iodemo {
 			System.out.println(floatData);
 			System.out.print(longData);
 			/*filepermission*/
-
-			
+			FilePermission fp_obj = new FilePermission("filepermdemo.txt", "write");
+			System.out.println(fp_obj.hashCode());
+			FileOutputStream o = new FileOutputStream("filepermdemo.txt");
+			o.write(fp_obj.hashCode());
 			
 			out.close();
 			is.close();
