@@ -108,17 +108,26 @@ public class iodemo {
 			System.out.println(intData);
 			System.out.println(floatData);
 			System.out.print(longData);
+			
 
 			
-			/* close the file */
+			
 			out.close();
 			is.close();
 			os.close();
 			bin.close();
-			dataInputStream.close();
+			dataInputStream.close();	
+
+		
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		finally {
+			
+			/* close the file */
+			
 		}
 
 	}
