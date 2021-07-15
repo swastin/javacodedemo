@@ -108,7 +108,7 @@ public class iodemo {
 			System.out.println(intData);
 			System.out.println(floatData);
 			System.out.print(longData);
-			
+			/*filepermission*/
 
 			
 			
