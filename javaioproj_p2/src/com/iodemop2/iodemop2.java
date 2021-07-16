@@ -20,47 +20,71 @@ public class iodemop2 {
 
 		}
 		System.out.println("Character encoding of fileReader1: " + ((InputStreamReader) r).getEncoding());
-		
-		File f=new File("createFile.txt");
-		if(f.createNewFile()) {
-			
+		/**************************
+		 * File handling using java|
+		 *************************/
+		/* Create File */
+		File f = new File("createFile.txt");
+		if (f.createNewFile()) {
+
 			System.out.println("successfully created");
-			
+
+		} else {
+
+			System.out.println("not created successfully ");
 		}
-		else {
-			
-			System.out.println("not created successfully ");	
-		}
-		
+
 		System.out.println("----------------------------------------------------------------------------------");
 //		System.out.println("FileName"+"\t"+"AbsolutePath"+"\t\t\t\t\t\t"+"canWrite"+"\t"+"canRead"+"\t"+"size");
 		System.out.println("------------------------------------------------------------------------------------");
-		
-if(f.exists()) {
-			
-			System.out.println("file name\t"+f.getName());
-			System.out.println("absolute path\t"+f.getAbsolutePath());
+
+		if (f.exists()) {
+
+			System.out.println("file name\t" + f.getName());
+			System.out.println("absolute path\t" + f.getAbsolutePath());
 			System.out.println("Is file writeable?:\t " + f.canWrite());
 			System.out.println("Is file readable\t " + f.canRead());
 			System.out.println("The size of the file in bytes is:\t " + f.length());
-			
 
-}
-		else {
-			
-			System.out.println("not created successfully ");	
+		} else {
+
+			System.out.println("not created successfully ");
 		}
 		
 		
+		/*Create directory*/
 		
+		File f1 = new File("demodirectory1");
+		if(f1.mkdir()) {
+			System.out.println("directory successfully created");	
+			
+			
+		}
+		else {
+			System.out.println("directory not created successfully ");
+			
+		}
+		/*See all the list of files and directory*/
 		
+		File f2 = new File("demodirectory");
+		String[] paths=f2.list();
+		for(String path:paths){
+			System.out.println(path);		
+		}
+	/*file delete*/	
+		if(f1.delete()) {
+			System.out.println("directory deleted successfully created");	
+			
+			
+		}
+		else {
+			System.out.println("directory not deleted successfully ");
+			
+		}
 		
-		
-		
+		/*Rename the file*/
+		File f3 = new File("demodirectory2");
+		f2.renameTo(f3);
 		
 	}
 }
-
-	
-
-
