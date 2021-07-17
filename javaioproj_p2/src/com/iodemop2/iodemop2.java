@@ -5,6 +5,22 @@ import java.io.*;
 public class iodemop2 {
 
 	public static void main(String[] args) throws Exception {
+		
+		/*PrintStream*/
+		
+		String str="Welcome to land of java";
+		PrintStream ps= new PrintStream("createFile.txt");
+		ps.print(str);
+		ps.println();
+		ps.println("this is the demo verson of print stream");
+		ps.println();
+		ps.printf("I have %d apple in my basket",10);
+		ps.println();
+		ps.format("this is the demo of %d,%d",10,10);
+		
+		
+		
+		
 
 		/* File writer */
 		Writer w = new FileWriter("filewriter.txt");
@@ -85,6 +101,7 @@ public class iodemop2 {
 		/*Rename the file*/
 		File f3 = new File("demodirectory2");
 		f2.renameTo(f3);
+	
 		
 	}
 }
