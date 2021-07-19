@@ -1,0 +1,2 @@
+module javalangexample2 {
+}
