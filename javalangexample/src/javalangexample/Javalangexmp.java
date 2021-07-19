@@ -149,6 +149,65 @@ System.out.println("---------------------------------------------");
 System.out.println(Double.sum(d1,d3));
 System.out.println(Double.min(d1,d3));
 System.out.println(Double.max(d1,d3));
+System.out.println("---------------------------------------------");
+
+System.out.println("=================Integer Class==========================");
+
+Integer i=new Integer(1);
+Integer i1=10;
+Integer i2=20;
+String s5="10";
+System.out.println(Integer.MAX_VALUE);
+System.out.println(Integer.MIN_VALUE);
+//int to octal convert
+System.out.println(Integer.toOctalString(i));
+System.out.println(Integer.toOctalString(9));
+//int to Hexadecimal convert
+System.out.println(Integer.toHexString(i));
+System.out.println(Integer.toOctalString(17));
+//int to Binary convert
+System.out.println(Integer.toBinaryString(17));
+System.out.println(Integer.toBinaryString(i));
+System.out.println("---------------------------------------------");
+//Convert string to integer
+System.out.println(Integer.parseInt(s5));
+System.out.println("---------------------------------------------");
+//Decode  integer
+System.out.println(Integer.decode(s5));
+//Comparing two integer value
+System.out.println(i1.compareTo(i2));
+System.out.println(Integer.compare(i1, 10));
+System.out.println("---------------------------------------------");
+//check the values are equal or not
+System.out.println(i1.equals(i1));
+//leading and trailing 
+System.out.println("---------------------------------------------");
+System.out.println(Integer.numberOfLeadingZeros(010));
+System.out.println(Integer.numberOfTrailingZeros(1000));
+System.out.println("---------------------------------------------");
+//Rotatation of number
+
+System.out.println(Integer.rotateLeft(10,1));
+System.out.println(Integer.rotateRight(1000,1));
+System.out.println("---------------------------------------------");
+//Reverse a number(bit operation)
+System.out.println(Integer.reverse(15));
+System.out.println("---------------------------------------------");
+//sum,max,min
+System.out.println(Integer.sum(15,i1));
+System.out.println(Integer.min(15,14));
+System.out.println(Integer.max(15,12));
+System.out.println("---------------------------------------------");
+
+System.out.println("=================Math Class==========================");
+Integer mi=10;
+Integer mi2=20;
+Double	md=10.5;
+Double md1=20.5;
+
+
+
+
 
 
 	}
